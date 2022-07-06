@@ -1,3 +1,4 @@
+# Implement Linear Probing
 class HashTable:
     def __init__(self):
         self.MAX = 100
@@ -34,6 +35,7 @@ class HashTable:
     def get_prob_range(self, index):
         return [*range(index, len(self.arr))] + [*range(0, index)]
 
+    # find an available slot to add key and value
     def find_slot(self, key, index):
         prob_range = self.get_prob_range(index)
         for prob_index in prob_range:
@@ -62,4 +64,4 @@ t['march 6'] = 96
 # del t['march 9']
 # print(t.arr)
 # print(t.get_prob_range(9))
-print(t.get_hash('march 6'))
+# print(t.get_hash('march 6'))
