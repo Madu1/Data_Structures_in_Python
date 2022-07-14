@@ -34,5 +34,5 @@ def produce_binary_nums(n):
         number_queue.dequeue()
 
 
-if __name__ == '__main__':
-    produce_binary_nums(10)
+# if __name__ == '__main__':
+#     produce_binary_nums(10)

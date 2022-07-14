@@ -42,13 +42,13 @@ def serve_order():
         time.sleep(2)
 
 
-if __name__ == '__main__':
-    food_queue = ['samosa', 'biryani', 'burger', 'lime juice', 'fried rice']
-
-    t1 = threading.Thread(target=place_order, args=(food_queue,))
-    t2 = threading.Thread(target=serve_order)
-
-    t1.start()
-    t2.start()
+# if __name__ == '__main__':
+#     food_queue = ['samosa', 'biryani', 'burger', 'lime juice', 'fried rice']
+#
+#     t1 = threading.Thread(target=place_order, args=(food_queue,))
+#     t2 = threading.Thread(target=serve_order)
+#
+#     t1.start()
+#     t2.start()
 
 
